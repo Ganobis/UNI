@@ -1,2 +1,2 @@
 # Sieci Komputerowe
-Zadania programistych zrealizowane na zajęciach z Sieci Komputerowych
+Zadania programistyczne zrealizowane na zajęciach z Sieci Komputerowych
