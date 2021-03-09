@@ -1,0 +1,14 @@
+Autor : Piotr Słowik
+Aplikacja : Sklep z bułkami - bułeczkarnia
+
+Przykładowe dane do logowania (w formacie login:hasło):
+sample:sample - przykładowy użytkownik
+admin:admin - admin
+
+Uruchomienie:
+npm start
+
+Niezalogowany użytkownik może przeglądać zawartość sklepu, wyszukiwać produkty oraz się zalogować, zarejestrować.
+Zalogowany użytkownik może przeglądać zawartość sklepu, wyszukiwać produkty, wylogować się, wrzucać produkty do koszyka,
+zrealizować zamówienie.
+Admin może edytować zawartość sklepu, przeglądać użytkowników oraz złożone zamówienia, ma też te same przywileje co normalny użytkownik.
