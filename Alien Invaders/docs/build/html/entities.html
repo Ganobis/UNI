@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>entities module &#8212; Alien Invaders 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-entities">
+<span id="entities-module"></span><h1>entities module<a class="headerlink" href="#module-entities" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="entities.bullet">
+<em class="property">class </em><code class="sig-prename descclassname">entities.</code><code class="sig-name descname">bullet</code><span class="sig-paren">(</span><em class="sig-param">img_src</em>, <em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">attack_speed</em>, <em class="sig-param">damage</em>, <em class="sig-param">direction</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.bullet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#entities.entity" title="entities.entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">entities.entity</span></code></a></p>
+<p>Bullet class that derives from entity</p>
+<dl class="method">
+<dt id="entities.bullet.get_collision">
+<code class="sig-name descname">get_collision</code><span class="sig-paren">(</span><em class="sig-param">rect</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.bullet.get_collision" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets collision of bullet and rectangle</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="entities.bullet.make_shoot_sound">
+<code class="sig-name descname">make_shoot_sound</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.bullet.make_shoot_sound" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes shoot sound</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="entities.bullet.move_shot">
+<code class="sig-name descname">move_shot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.bullet.move_shot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moves the bullet</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="entities.enemy">
+<em class="property">class </em><code class="sig-prename descclassname">entities.</code><code class="sig-name descname">enemy</code><span class="sig-paren">(</span><em class="sig-param">img_src</em>, <em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">hp</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#entities.entity" title="entities.entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">entities.entity</span></code></a></p>
+<p>Enemy class that derives from entity</p>
+<dl class="method">
+<dt id="entities.enemy.is_destroyed">
+<code class="sig-name descname">is_destroyed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.is_destroyed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if enemy is destroyed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="entities.enemy.shoot">
+<code class="sig-name descname">shoot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.enemy.shoot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes enemy shoot</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="entities.entity">
+<em class="property">class </em><code class="sig-prename descclassname">entities.</code><code class="sig-name descname">entity</code><span class="sig-paren">(</span><em class="sig-param">img_src</em>, <em class="sig-param">x</em>, <em class="sig-param">y</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.entity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Entity class, holds entity image, size and x,y cordinates</p>
+<dl class="method">
+<dt id="entities.entity.draw">
+<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">target_window</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.entity.draw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws the entity in target window</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="entities.entity.get_xy">
+<code class="sig-name descname">get_xy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.entity.get_xy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the (x,y) coordinate</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="entities.entity.move">
+<code class="sig-name descname">move</code><span class="sig-paren">(</span><em class="sig-param">x_diff</em>, <em class="sig-param">y_diff</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.entity.move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moves the entity</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="entities.player">
+<em class="property">class </em><code class="sig-prename descclassname">entities.</code><code class="sig-name descname">player</code><span class="sig-paren">(</span><em class="sig-param">img_src</em>, <em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">velocity</em>, <em class="sig-param">bullet_img_src</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#entities.entity" title="entities.entity"><code class="xref py py-class docutils literal notranslate"><span class="pre">entities.entity</span></code></a></p>
+<p>Player class that derives from entity</p>
+<dl class="method">
+<dt id="entities.player.get_collision">
+<code class="sig-name descname">get_collision</code><span class="sig-paren">(</span><em class="sig-param">rect</em><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.get_collision" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets collision of the player and rectangle</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="entities.player.get_shoot_xy">
+<code class="sig-name descname">get_shoot_xy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.get_shoot_xy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets player shoot x,y coordinates</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="entities.player.shoot">
+<code class="sig-name descname">shoot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#entities.player.shoot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Makes player shoot</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Alien Invaders</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Piotr Słowik.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/entities.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
